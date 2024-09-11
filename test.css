@@ -6,7 +6,7 @@ body {
   display: grid;
   gap: 20px;
   grid-template-columns: auto;
-  background-color: rgb(147, 245, 196);
+  background-color: rgb(102, 132, 177);
   padding: 10px;
 }
 .grid-item {
