@@ -4,8 +4,8 @@ body {
 
 .grid-container {
   display: grid;
-  gap: 35px 50px;
-  grid-template-columns: auto auto;
+  gap: 20px;
+  grid-template-columns: auto;
   background-color: rgb(147, 245, 196);
   padding: 10px;
 }
