@@ -1,33 +1,34 @@
-/*Dette er en annen kommentar*/
 * {
-    box-sizing: border-box;
-  }
-  
-  body {
-    margin: 0;
-  }
-  
-  .header {
-    background-color: #f1f1f1;
-    padding: 20px;
-    text-align: center;
+  box-sizing: border-box;
+}
 
-  }
-  
-  .toppnav {
-    overflow: hidden;
-    background-color: #333;
-  }
+body{
+  margin: 0;
+}
 
-  .toppnav a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration:none;
-  }
-  .toppnav a:hover {
-    background-color: #ddd;
-    color:black;
-  }
+.header {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 20px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #3d3a3a;
+}
+
+/* Style the topnav links */
+.topnav a {
+float: left;
+display: block;
+color: #ffffff;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+background-color: #ddd;
+color: black;
+}
