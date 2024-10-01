@@ -3,13 +3,17 @@
   }
   
   body{
+    height: 100%;
     margin: 0;
+    background-image:url("../Bilder/photo-1535448033526-c0e85c9e6968.jpg");
+    background-repeat:no-repeat;
+    background-size: cover;
   }
-  
+
   .header {
     background-color: #ffffff;
     text-align: center;
-    padding: 20px;
+    padding:20px;
   }
   
   .topnav {
@@ -31,4 +35,4 @@
   .topnav a:hover {
   background-color: #ddd;
   color: black;
-}
+  }
