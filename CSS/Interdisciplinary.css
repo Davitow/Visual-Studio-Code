@@ -5,9 +5,7 @@
   body{
     height: 100%;
     margin: 0;
-    background-image:url("../Bilder/photo-1535448033526-c0e85c9e6968.jpg");
     background-repeat:no-repeat;
-    background-size: cover;
   }
 
   .header {
@@ -38,9 +36,9 @@
   }
 
   div.background {
-    border: 2px solid black;
+    border: 2px solid rgb(0, 0, 0);
   }
-  
+
   div.transbox {
     float: right;
     margin: 30px;
