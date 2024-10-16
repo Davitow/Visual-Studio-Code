@@ -40,11 +40,10 @@
   }
 
   div.transbox {
-    float: right;
     margin: 30px;
     background-color: #ffffff;
     border: 2px solid rgb(0, 0, 0);
-    opacity: 0.6;
+    opacity: 1;
   }
 
   div.transbox p {
@@ -61,6 +60,7 @@
 
 /* Left and right column */
 .column.side {
+  float: right;
   width: 25%;
 }
 
