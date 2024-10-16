@@ -41,6 +41,7 @@
     border: 2px solid black;
   }
   
+  /* Transparent box*/
   div.transbox {
     margin: 30px;
     background-color: #ffffff;
@@ -53,3 +54,10 @@
     font-weight: bold;
     color: #000000;
   }
+
+  /* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}
