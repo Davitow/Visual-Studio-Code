@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+}
+
+.header {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 20px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #005eb8;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+div.transbox {
+  margin: 30px;
+  background-color: #ffffff;
+  border: 2px solid rgb(0, 0, 0);
+  opacity: 1;
+}
+
+div.transbox p {
+  margin: 5%;
+  font-weight: bold;
+  color: #000000;
+}
+
+div.background {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+
+/* Use flexbox for the row layout */
+.row {
+  display: flex; /* Enable flexbox */
+}
+
+/* Middle column */
+.column-middle {
+  width: 70%; /* Adjust width */
+  padding: 10px; /* Optional padding */
+}
+
+/* Side column */
+.column-side {
+  width: 50%; /* Adjust width */
+  padding: 10px; /* Optional padding */
+}
+
+.column-side h5 {
+  font-size: 1.5em; /* Adjust size as needed */
+  font-weight: bold; /* Make it bold */
+}
+
+.column-side h6 {
+  font-size: 1em; /* Adjust size as needed */
+  font-weight: bold; /* Regular weight for h6 */
+}
+
+/* Ensure that the layout is responsive */
+@media screen and (max-width: 600px) {
+  .column-middle, .column-side {
+      width: 100%; /* Stack columns on small screens */
+  }
+}
