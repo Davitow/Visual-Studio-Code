@@ -4,20 +4,21 @@
 
 body{
   margin: 0;
+  background-color: #81f676f6;
 }
 
 .header {
-  background-color: #b2f9ac;
+  background-color: #81f6768e;
   text-align: center;
   padding: 20px;
 }
 
+/* Style toppnavlinks */
 .topnav {
   overflow: hidden;
   background-color: #033200;
 }
 
-/* Style the topnav links */
 .topnav a {
 float: left;
 display: block;
@@ -33,10 +34,43 @@ background-color: #ddd;
 color: black;
 }
 
-.grid-container {
-  backgorund-color: #b2f9ac;
-  display: grid;
-  gap: 5px;
+.background-color {
+  background-color: #b2f9ac;
+}
+
+/* Tre columns */
+.column {
+  float: left;
   padding: 10px;
-  grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* Left and right column */
+.column.side {
+  width: 25%;
+}
+
+/* Middle column */
+.column.middle {
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+
+/* Style the footer */
+.footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
 }
