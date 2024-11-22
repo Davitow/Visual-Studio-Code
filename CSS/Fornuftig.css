@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 
-body{
+body {
   margin: 0;
   background-color: #81f676f6;
 }
@@ -13,64 +13,84 @@ body{
   padding: 20px;
 }
 
-/* Style toppnavlinks */
 .topnav {
   overflow: hidden;
   background-color: #033200;
 }
 
 .topnav a {
-float: left;
-display: block;
-color: #ffffff;
-text-align: center;
-padding: 14px 16px;
-text-decoration: none;
+  float: left;
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
-/* Change color on hover */
 .topnav a:hover {
-background-color: #ddd;
-color: black;
+  background-color: #ddd;
+  color: black;
 }
 
 .background-color {
   background-color: #b2f9ac;
 }
 
-/* Tre columns */
 .column {
   float: left;
   padding: 10px;
 }
 
-/* Left and right column */
 .column.side {
-  width: 50%;
+  width: 35%;
+  padding-left: 120px;
 }
 
-/* Middle column */
 .column.middle {
   width: 50%;
 }
 
-/* Clear floats after the columns */
 .row::after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .column.side, .column.middle {
     width: 100%;
   }
 }
 
-/* Style the footer */
 .footer {
   background-color: #f1f1f1;
   padding: 10px;
   text-align: center;
+}
+
+/* for å plassere spillet under kolonnene */
+.game-container {
+  clear: both;
+  margin-top: 20px;
+  text-align: center;
+  padding: 20px;
+  background-color: #81f676f6;
+  border-radius: 5px;
+}
+
+.game-container h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
 }

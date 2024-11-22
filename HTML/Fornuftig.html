@@ -7,59 +7,53 @@
 </head>
 
 <body>
-<!--Dette er en kommentar-->
 
     <div>
       <div class="header">
-        <h1 style="color: #054800; ;">David Enyinnaya</h1>
-    </div>
+        <h1 style="color: #054800;">David Enyinnaya</h1>
+      </div>
   
-    <!--Navigation bar-->  
-    <div class="topnav">
+      <!-- Navigation bar -->
+      <div class="topnav">
           <a href="../HTML/Fornuftig.html">Home</a>
           <a href="../HTML/Fornuftig/Ferdigheter_Underside.html">Mine ferdigheter</a>
           <a href="../HTML/Fornuftig/Fotoserie_Underside.html">Fotoserie prosjekt</a>
           <a href="../HTML/Fornuftig/Dokumentasjon.html">Dokumentasjon</a>
           <a href="../HTML/Fornuftig/Logg.html">Logg</a>
-            <div style="float:right">
-                <a href="../index.html" target="_blank">Visit index</a>
-        </div>
-    </div>
-    </div>
-
-    <div class="grid-container">
-        <div class="grid-item item1"><h1>Alder</h1>
-            <div id="output"></div>
-            <script src="../JS/js_intro-del1.js"></script>
-        
-        </div>
+          <div style="float:right">
+              <a href="../index.html" target="_blank">Visit index</a>
+          </div>
       </div>
+
+    </div>
+
+    <!-- Middle column, inneholder hoved tekst til nettsiden -->
+    <div class="column middle">
+        <h2 style="color:#054800;">Om meg</h2>
+        <p>Hei! Jeg heter David Enyinnaya. På denne nettsiden skal jeg fortelle om megselv, vise hva jeg kan og noen ting jeg har jobbet med. Jeg bor i Bergen, Norge og går på Amalie Skram vgs. Linjen jeg går på er Informasjonsteknologo og medieproduksjon i vg1. Jeg valgte IT og medieproduksjon fordi jeg har vært interessert i programmering/data for ganske lenge. Jeg hadde til og med programmering som valgfag på ungdomsskolen fra 8. klasse til 10.</p>
+        <p>Det jeg liker å gjøre i fritiden er som oftest å spille, se på anime eller tv serier og skateboarde på sommeren. Noen av favoritt spillene mine er de fleste pokemon spillene, minecraft, Team fortress 2, Elden Ring for å nevne noen få. Mine favoritt anime og tv serier er Dragon Ball Z, Pokemon, jujutsukaisen, Arcane og Breaking Bad.</p>
+    </div>
     
-    <!--Middle column, inneholder hoved tekst til nettsiden-->
-        <div class="column middle">
-          <h2 style="color:#054800; ;" >Om meg</h2>
-          <p>Hei! Jeg heter David Enyinnaya. På denne nettsiden skal jeg fortelle om megselv, vise hva jeg kan og noen ting jeg har jobbet med. Jeg bor i Bergen, Norge og går på Amalie Skram vgs. Linjen jeg går på er Informasjonsteknologo og medieproduksjon i vg1. Jeg valgte IT og medieproduksjon fordi jeg har vært interessert i programmering/data for ganske lenge. Jeg hadde til og med programmering som valgfag på ungdomsskolen fra 8. klasse til 10.</p>
-          <p>Det jeg liker å gjøre i fritiden er som oftest å spille, se på anime eller tv serier og skateboarde på sommeren. Noen av favoritt spillene mine er de fleste pokemon spillene, minecraft, Team fortress 2, Elden Ring for å nevne noen få. Mine favoritt anime og tv serier er Dragon Ball Z, Pokemon, jujutsukaisen, Arcane og Breaking Bad.</p>
-        </div>
-        
-    <!--Legge inn bilder her relatert til hva som står i main column-->
-        <div class="column side">
-          <h2>Side</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
-        </div>
-        
+    <!-- Side column -->
+    <div class="column side">
+        <h2>Side</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+    </div>
+
+    <!-- Spillkontroller (Stein, Saks, Papir) under kolonnene -->
+    <div class="game-container">
+        <h2>Stein, Saks, Papir</h2>
         <select id="choice">
-        <option value="stein">Stein</option>
-        <option value="saks">Saks</option>
-        <option value="papir">papir</option>
-    </select>
-
-
-    <button id="play"> Play</button>
-    <p id="result"> Who won?</p>
-    <p id="human-score"> Human-Score: 0</p>
-    <p id="robot-score"> Robot-Score: 0</p>
-    <script src="../JS/Stein,saks,papir.js" defer></script>
+            <option value="stein">Stein</option>
+            <option value="saks">Saks</option>
+            <option value="papir">Papir</option>
+        </select>
+        <button id="play">Play</button>
+        <p id="result">Who won?</p>
+        <p id="human-score">Human-Score: 0</p>
+        <p id="robot-score">Robot-Score: 0</p>
+        <script src="../JS/Stein,saks,papir.js" defer></script>
+    </div>
 
 </body>
 </html>
