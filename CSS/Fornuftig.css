@@ -56,6 +56,22 @@ body {font-family: Verdana, sans-serif; margin:0}
   width: 50%;
 }
 
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+td {
+  width: 33.33%;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid black;
+}
+
+/* Stil for bokser på toppen og bunnen */
+.top-row, .bottom-row {
+  background-color: #b2f9ac; /* Lys grå bakgrunn */
+}
+
 .row::after {
   content: "";
   display: table;
