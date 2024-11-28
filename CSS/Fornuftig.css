@@ -56,12 +56,15 @@ body {font-family: Verdana, sans-serif; margin:0}
   width: 50%;
 }
 
+/*table for logg*/
 table {
   width: 100%;
   border-collapse: collapse;
 }
+
+/*Table data cells, boksene i tabellen*/
 td {
-  width: 33.33%;
+  width: 25%;
   padding: 20px;
   text-align: center;
   border: 1px solid black;
@@ -85,6 +88,7 @@ td {
   }
 }
 
+/*Footer, underside på nettsiden*/
 .footer {
   background-color: #f1f1f1;
   padding: 10px;
@@ -118,4 +122,3 @@ button {
 button:hover {
   background-color: #45a049;
 }
-
