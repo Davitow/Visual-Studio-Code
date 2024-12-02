@@ -48,8 +48,8 @@ body {font-family: Verdana, sans-serif; margin:0}
 }
 
 .column.side {
-  width: 35%;
-  padding-left: 120px;
+  width: 50%;
+  padding-right: 120px;
 }
 
 .column.middle {

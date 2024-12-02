@@ -19,3 +19,27 @@ byttVerdier();
 // Skriver ut verdiene etter bytte
 console.log("Etter bytte:");
 console.log("tall1 =", tall1, "og tall2 =", tall2);
+
+function calculate(tall1, tall2, operator) {
+
+    if (operator === "+") {
+        return tall1 + tall2;
+    
+    } else if (operator === "-") {
+        return tall1 - tall2;
+    
+    } else if (operator === "*") {
+        return tall1 * tall2;
+    
+    } else if (operator === "/") {
+        return tall1 / tall2;
+    
+    } else {
+        return "Kan ikke dele med 0";
+    }
+    
+    } else {
+        return "Ugylidig operasjon";
+    
+
+}
