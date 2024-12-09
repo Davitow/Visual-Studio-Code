@@ -11,7 +11,7 @@
 
     <div>
       <div class="header">
-        <h1 style="color: #054800; ;">David Enyinnaya</h1>
+        <h1>David Enyinnaya</h1>
     </div>
   
     <!--Navigation bar-->  
@@ -20,6 +20,7 @@
           <a href="../Fornuftig/Ferdigheter_Underside.html">Ferdigheter</a>
           <a href="../Fornuftig/Fotoserie_Underside.html">Fotoserie prosjekt</a>
           <a href="../Fornuftig/Dokumentasjon.html">Dokumentasjon</a>
+          <a href="../Fornuftig/Stein,saks,papir.html">Stein,saks,papir</a>
           <a href="../Fornuftig/Logg.html">Logg</a>
             <div style="float:right">
                 <a href="../index.html" target="_blank">Visit index</a>
@@ -29,14 +30,30 @@
   
    <!-- Middle column, inneholder hoved tekst til nettsiden -->
    <div class="column middle">
-    <h2 style="color:#054800;">Mine ferdigheter</h2>
-    <p>Som sagt har jeg på home pagen har jeg hatt erfaring i programmering før videregående. Jeg hadde programmering som valgfag fra 8. til 10. klasse. Meste parten av språke vi brukte i valgfag var python også brukte vi litt blokk koding. Programmene vi brukte mest var trinket, scratch og makecode.</p>
+    <h2>Mine ferdigheter</h2>
+    <p>Som sagt har jeg på startsiden har jeg erfaring i programmering før videregående. Jeg hadde programmering som valgfag fra 8. til 10. klasse. Meste parten av språkene vi brukte i valgfag var python og litt blokk koding. Programmene vi brukte mest var trinket, scratch og makecode. I valgfag timene lagde vi enkle spill, gjorde programmerings oppgaver på Kikora og Lær kidsa koding og vi programmerte også noen små kjørende roboter og en drone.</p>
+    <p>Utenfor skole gikk jeg også på et spillutviklings kurs for en dag der vi lærte det grunnleggende om spillutvikling og brukte unreal engine for å lage et 2d spill. Nå etter jeg har begynt på Amalie Skram har jeg fått erfaring i html, css og javascript og generelt om webdesign f.eks brukergrensesnitt, harmonisk fargevalg osv.</p>
 </div>
 
 <!-- Side column -->
 <div class="column side">
-    <h2>Side</h2>
-    <p></p>
+    <div class="slideshow-container">
+        <div class="slide fade"></div>
+        <div class="slide fade"></div>
+        <div class="slide fade"></div>
+
+        <!-- Left and Right Arrows -->
+        <a class="prev" onclick="moveSlides(-1)">&#10094;</a>
+        <a class="next" onclick="moveSlides(1)">&#10095;</a>
+
+        <!-- Navigation dots -->
+        <div class="dot-container">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </div>
+    <script src="../../JS/slideshow.js" defer></script>
 </div>
 
 </body>
