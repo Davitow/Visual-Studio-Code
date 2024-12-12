@@ -56,22 +56,25 @@ body {font-family: Verdana, sans-serif; margin:0}
   width: 50%;
 }
 
-/* Slideshow container */
+/* Stil for slideshow-container */
 .slideshow-container {
   position: relative;
+  max-width: 100%;
   width: 100%;
-  max-width: 600px;
-  margin: auto;
-  overflow: hidden; /* Hide extra images when not visible */
+  height: 400px; /* Sett en fast høyde for containeren */
+  overflow: hidden; /* Sikrer at ingenting går utenfor containeren */
 }
 
-/* Style hver slide */
+/* Skjul alle slides initialt */
 .slide {
-  display: none;
+  opacity: 0;
+  position: absolute;
+  height: 100%; /* Sett høyden til 100% av containeren */
   width: 100%;
-  height: 400px; /* Set a fixed height for the slides */
-  background-size: cover;  /* Ensure the image covers the whole slide */
-  background-position: center;  /* Center the background image */
+  transition: opacity 2s ease-in-out;  /* Fade-overgang */
+  z-index: -1; /* Ikke synlig når den ikke er aktiv */
+  background-size: cover;  /* Sikrer at bilde dekker hele sliden */
+  background-position: center;  /* Sentere bildet */
 }
 
 /* Set specific images for each slide */
@@ -87,30 +90,22 @@ body {font-family: Verdana, sans-serif; margin:0}
   background-image: url('../Bilder/Python\ -\ Fornuftig.jpg');
 }
 
-/* Slide animasjon */
-.fade {
-  animation-name: fad;
-  animation-duration: 2s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
+/* Når en slide er aktiv, vis den */
+.slide.active {
+  opacity: 1;
+  z-index: 1;
 }
 
-/* Keyframes for fade effect */
-@keyframes fade {
-  0% { opacity: 0; }
-  25% { opacity: 1; }
-  75% { opacity: 1; }
-  100% { opacity: 0; }
-}
-
-/* Dots for navigasjon */
+/* Navigation dots container */
 .dot-container {
-  text-align: center;
   position: absolute;
   bottom: 10px;
+  text-align: center;
   width: 100%;
+  z-index: 2;  /* Sørg for at dotsene er synlige over bildene */
 }
 
+/* Styling for dots */
 .dot {
   height: 15px;
   width: 15px;
@@ -118,11 +113,10 @@ body {font-family: Verdana, sans-serif; margin:0}
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.6s ease;
 }
 
-/* Skifter dot farge på hover */
-.dot:hover {
+.dot.active {
   background-color: #717171;
 }
 
@@ -131,9 +125,8 @@ body {font-family: Verdana, sans-serif; margin:0}
   opacity: 1;
 }
 
-/* Style for prev og next knapper */
+/* Style for prev and next buttons */
 .prev, .next {
-  cursor: pointer;
   position: absolute;
   top: 50%;
   padding: 16px;
@@ -144,15 +137,16 @@ body {font-family: Verdana, sans-serif; margin:0}
   border: none;
   border-radius: 50%;
   user-select: none;
-  transform: translateY(-50%);
+  transform: translateY(-50%); /* Justerer for å være i midten vertikalt */
+  z-index: 2;  /* Sørg for at knappene er synlige over bildene */
 }
 
 .prev {
-  left: 0;
+  left: 0; /* Plasserer venstre knapp til venstre */
 }
 
 .next {
-  right: 0;
+  right: 0; /* Plasserer høyre knapp til høyre */
 }
 
 /*table for logg*/
@@ -189,10 +183,15 @@ td {
 
 /*Footer, underside på nettsiden*/
 .footer {
-  background-color: #f1f1f1;
+  background-color: #81f676f6;
   padding: 10px;
   text-align: center;
 }
+
+.iframe {
+  width: 100%;
+  }
+
 
 /* for å plassere spillet under kolonnene */
 .game-container {

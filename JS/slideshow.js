@@ -1,40 +1,33 @@
-let slideIndex = 0;
-showSlides();  // Initial display of the slides
+let slideIndex = 1;  // Start med første slide
+showSlides(slideIndex);  // Vis den første sliden
 
-function showSlides() {
+function showSlides(n) {
     let slides = document.getElementsByClassName("slide");
     let dots = document.getElementsByClassName("dot");
 
-    // Hide all slides
+    // Sørg for at slideIndex holder seg innenfor gyldig rekkevidde
+    if (n > slides.length) { slideIndex = 1; }
+    if (n < 1) { slideIndex = slides.length; }
+
+    // Fjern 'active' fra alle slides
     for (let i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
+        slides[i].classList.remove("active");
     }
 
-    // Increment or reset slideIndex for next slide
-    slideIndex++;
-    if (slideIndex > slides.length) { slideIndex = 1 }  // Loop back to first slide if at the end
-
-    // Deactivate all dots
+    // Deaktiver alle punktene
     for (let i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
+        dots[i].classList.remove("active");
     }
 
-    // Show the current slide
-    slides[slideIndex - 1].style.display = "block";
+    // Vis den nåværende sliden
+    slides[slideIndex - 1].classList.add("active");
 
-    // Activate the current dot
-    dots[slideIndex - 1].className += " active";
+    // Aktiver det nåværende punktet
+    dots[slideIndex - 1].classList.add("active");
 }
 
-// Function to move slides (left or right)
+// Funksjon for å flytte slides (venstre eller høyre)
 function moveSlides(n) {
-    slideIndex += n;  // Adjust slideIndex by the argument (next or previous)
-
-    if (slideIndex > document.getElementsByClassName("slide").length) {
-        slideIndex = 1;  // Loop back to the first slide if at the end
-    } else if (slideIndex < 1) {
-        slideIndex = document.getElementsByClassName("slide").length;  // Go to the last slide if at the first one
-    }
-
-    showSlides();  // Update the display of the slides
+    slideIndex += n;  // Juster slideIndex med argumentet (neste eller forrige)
+    showSlides(slideIndex);  // Oppdater visningen av slides
 }

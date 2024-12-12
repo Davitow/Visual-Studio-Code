@@ -1,43 +1,39 @@
 document.getElementById("play").addEventListener("click", play)
 
-let humanScore = 0
-let computerScore = 0
- 
+let humanScore = 0;
+let computerScore = 0;
 
 function play() {
-    let value = document.getElementById("choice").value
-    const choices = ["stein", "papir", "saks"]
-    console.log(value)
-    let robot = choices[Math.floor(Math.random() * 3)]
+    let value = document.getElementById("choice").value;
+    const choices = ["stein", "papir", "saks"];
+    console.log(value);
+    
     if (!choices.includes(value)) {
-        console.log("Not valid choice")
+        console.log("Not valid choice");
+        document.getElementById("result").innerText = "Not valid choice";
+        return;
     }
+    
+    let robot = choices[Math.floor(Math.random() * 3)];
+    console.log("Robot choice: " + robot);
+    
     if (value === robot) {
-        console.log("Tie")
-        document.getElementById("result").innerText = "Tie"
-    }
-    else if (value === "stein" & robot === "saks") {
-        console.log("Player won")
-        document.getElementById("result").innerText = "You Win!"
+        console.log("Tie");
+        document.getElementById("result").innerText = "Tie";
+    } 
+    else if ((value === "stein" && robot === "saks") || 
+             (value === "papir" && robot === "stein") || 
+             (value === "saks" && robot === "papir")) {
+        console.log("Player won");
+        document.getElementById("result").innerText = "You Win!";
         humanScore++;
-    }
-    else if (value === "papir" & robot === "stein") {
-        console.log("Player won")
-        document.getElementById("result").innerText = "You Win!"
-        humanScore++;
-    }
-    else if (value === "saks" & robot === "papir") {
-        console.log("Player won")
-        document.getElementById("result").innerText = "You Win!"
-        humanScore++;
-    }
+    } 
     else {
-        console.log("Robot won")
+        console.log("Robot won");
+        document.getElementById("result").innerText = "Robot wins";
         computerScore++;
-        document.getElementById("result").innerText = "Robot wins"
     }
-    document.getElementById("human-score").innerText = "Player score:"+ humanScore
-    document.getElementById("robot-score").innerText = "Robot score:" + computerScore
+    
+    document.getElementById("human-score").innerText = "Player score: " + humanScore;
+    document.getElementById("robot-score").innerText = "Robot score: " + computerScore;
 }
-
-let score = document.getElementById("")
