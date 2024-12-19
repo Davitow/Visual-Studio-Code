@@ -74,6 +74,17 @@ body {font-family: Verdana, sans-serif; margin:0}
   width: 50%;
 }
 
+.Skisse {
+  position: relative;
+  overflow:hidden;
+  max-width: 100%;
+}
+
+.Skisse img {
+  width: 100%; /* Ensures the image scales with the container */
+  height: auto; /* Maintain aspect ratio */
+}
+
 /* Container for å holde kartet og gjøre det responsiv */
 .map-container {
   position: relative;
@@ -191,10 +202,11 @@ table {
 
 /*Table data cells, boksene i tabellen*/
 td {
-  width: 25%;
+  table-layout: auto;
   padding: 20px;
   text-align: center;
   border: 1px solid black;
+  word-wrap: break-word; /* Ensure text wraps within the cell */
 }
 
 /* Stil for bokser på toppen og bunnen */
@@ -258,5 +270,11 @@ button:hover {
 @media (max-width: 600px) {
   .grid-container {
     grid-template-columns: repeat(2, 1fr);  /* 2 columns på medium skjermer */
+  }
+}
+
+@media (max-width: 600px) {
+  td {
+    padding: 1%; /* Adjust padding on smaller screens */
   }
 }
