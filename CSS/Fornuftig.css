@@ -13,7 +13,7 @@ body {font-family: Verdana, sans-serif; margin:0}
 .header {
   background-color: #81f6768e;
   text-align: center;
-  padding: 20px;
+  padding: 2%;
 }
 
 /*Topnav bar*/
@@ -41,39 +41,30 @@ body {font-family: Verdana, sans-serif; margin:0}
   background-color: #b2f9ac;
 }
 
+/*Grid for hver av bildene brukt i fotoserie prosjekt*/
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto;
-  gap: 20px;
+  gap: 2%;
   background-color: #81f6768e;
-  padding-left: 10px;
+  padding-left: 1%;
 }
 
 .grid-container > div {
   background-color:#81f6768e;
   text-align: center;
-  padding:30px 0;
-  font-size: 30px;
-}
-
-.grid-container input {
-  width: 70%; /* makes the input span the entire width of the div */
-  padding: 10px;
-  margin-top: 10px;
-  font-size: 18px;
-  border: 2px solid #ccc;
-  border-radius: 5px;
+  padding:3% 0;
+  font-size: 150%;
 }
 
 .column {
   float: left;
-  padding: 10px;
+  padding: 1%;
   font-size: larger;
 }
 
 .column.side {
   width: 50%;
-  padding-left: 100px;
 }
 
 .column.middle {
@@ -197,13 +188,6 @@ td {
   clear: both;
 }
 
-/*Endrer utseende på andre enheter, mer spesefikt mobiler*/
-@media screen and (max-width: 600px) {
-  .column.side, .column.middle {
-    width: 100%; /*Gjør side og middle columns fylle 100% på mobil enheter*/
-  }
-}
-
 /*Footer, underside på nettsiden*/
 .footer {
   background-color: #81f676f6;
@@ -242,4 +226,11 @@ button {
 /*Skifter farge på hover*/
 button:hover {
   background-color: #45a049;
+}
+
+/*Endrer utseende på andre enheter, mer spesefikt mobiler*/
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%; /*Gjør side og middle columns fylle 100% på mobil enheter*/
+  }
 }
