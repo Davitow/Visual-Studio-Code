@@ -44,10 +44,12 @@ body {font-family: Verdana, sans-serif; margin:0}
 /*Grid for hver av bildene brukt i fotoserie prosjekt*/
 .grid-container {
   display: grid;
+  width: 100%;
   grid-template-columns: auto auto auto;
   gap: 2%;
   background-color: #81f6768e;
   padding-left: 1%;
+  max-width: 100%;
 }
 
 .grid-container > div {
@@ -55,6 +57,7 @@ body {font-family: Verdana, sans-serif; margin:0}
   text-align: center;
   padding:3% 0;
   font-size: 150%;
+  position:relative
 }
 
 .column {
@@ -249,5 +252,11 @@ button:hover {
 @media screen and (max-width: 600px) {
   .column.side, .column.middle {
     width: 100%; /*Gjør side og middle columns fylle 100% på mobil enheter*/
+  }
+}
+
+@media (max-width: 600px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);  /* 2 columns på medium skjermer */
   }
 }
