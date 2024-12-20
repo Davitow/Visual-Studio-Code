@@ -41,6 +41,15 @@ body {font-family: Verdana, sans-serif; margin:0}
   background-color: #b2f9ac;
 }
 
+.hilsen {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+#nameOutput {
+  font-size: 1.5em;
+  margin-top: 20px;
+}
+
 /*Grid for hver av bildene brukt i fotoserie prosjekt*/
 .grid-container {
   display: grid;
