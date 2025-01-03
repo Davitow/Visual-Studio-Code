@@ -4,8 +4,7 @@ function displayGreeting() {
 
     //Sjekker om et navn er skrevet inn//
     if (userName.trim() !== "") {
-        //Vis hilsen med det skrevet inn navnet//
-        document.getElementById("nameOutput").innerHTML = "Hello, " + userName + "!";
+        document.getElementById("nameOutput").innerHTML = "Hello, " + userName + "!"; //Vis hilsen med det skrevet inn navnet//
         document.getElementById("nameOutput").style.color = "black"; //Setter fargen på hilsen teksten til svart//
     } else {
         //Hvis ingen navn er skrevet inn, spør brukeren om å skrive in navn//
