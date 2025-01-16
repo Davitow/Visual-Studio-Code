@@ -39,8 +39,8 @@
   }
 
   .image-container img {
-    height: 74vh; /* Sett høyden til 40% av skjermens høyde */
-    width: 100%; /* Behold full bredde for bildet */
+    height: 74vh; /* Setter høyden til 40% av skjermens høyde */
+    width: 100%; /* Beholder full bredde for bildet */
     object-fit: cover; /* Sørger for at bildet fyller området uten å forvrenge det */
   }
   
@@ -62,4 +62,19 @@
 
   .column.side {
     width: 50%;
+  }
+
+  /*table for logg*/
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  /*Table data cells, boksene i tabellen*/
+  td {
+    table-layout: auto;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid black;
+    word-wrap: break-word; /* Ensure text wraps within the cell */
   }
