@@ -7,7 +7,7 @@
     background-color: rgb(231, 249, 218);
     overflow-y: scroll;
     font-family: Trebuchet MS, sans-serif; margin:0;
-    font-size: 110%;
+    font-size: 120%;
     line-height: 140%;
   }
 
@@ -49,19 +49,26 @@
   }
 
   .column {
-    padding: 1%;
-    font-size: 110%;
-  }
-
-  .column.middle {
     padding-top: 2%;
     padding-left: 10%;
     padding-right: 10%;
     width: 100%;
   }
 
+  .column.middle {
+    float: left;
+    padding-top: 2%;
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 60%;
+  }
+
   .column.side {
-    width: 50%;
+    float: right;
+    padding-top: 2%;
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 40%;
   }
 
   /*table for logg*/
@@ -77,4 +84,13 @@
     text-align: center;
     border: 1px solid black;
     word-wrap: break-word; /* Ensure text wraps within the cell */
+  }
+
+  .myChart {
+    width: 30%;
+  }
+
+  canvas {
+    width: 400px;  /* Angir bredde på diagrammet */
+    height: 400px; /* Angir høyde på diagrammet */
   }
