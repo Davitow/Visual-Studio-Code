@@ -57,7 +57,7 @@
 
   .column.middle {
     float: left;
-    padding-top: 2%;
+    padding-top: 6%;
     padding-left: 10%;
     padding-right: 10%;
     width: 60%;
@@ -65,13 +65,12 @@
 
   .column.side {
     float: right;
-    padding-top: 2%;
+    padding-top: 3%;
     padding-left: 10%;
     padding-right: 10%;
     width: 40%;
   }
 
-  /*table for logg*/
   table {
     width: 100%;
     border-collapse: collapse;
@@ -86,11 +85,6 @@
     word-wrap: break-word; /* Ensure text wraps within the cell */
   }
 
-  .myChart {
-    width: 30%;
-  }
-
   canvas {
-    width: 400px;  /* Angir bredde på diagrammet */
-    height: 400px; /* Angir høyde på diagrammet */
+    height: 70%;
   }
