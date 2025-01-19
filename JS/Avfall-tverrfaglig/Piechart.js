@@ -86,3 +86,25 @@ new Chart("myChart3", {
     }
   }
 });
+
+var xValues = ["Ja", "Nei", "Usikker"];
+var prosentValues = [66.7, 16.7, 16.7];
+var barColors = [
+  "rgb(0, 98, 255)",
+  "rgb(220, 3, 3)",
+  "rgb(208, 182, 14)"
+];
+
+// Sjekk om Chart er tilgjengelig før du oppretter diagrammet
+console.log(Chart);
+
+new Chart("myChart4", {
+  type: "pie",  // Angi type som "pie" for sektordiagram
+  data: {
+    labels: xValues,
+    datasets: [{
+        backgroundColor: barColors,
+        data: prosentValues
+    }]
+  },
+});
