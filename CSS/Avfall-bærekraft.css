@@ -112,9 +112,8 @@
 
   .tilbake-button {
     float: right;
-    background-color: #4CAF50;
+    background-color: #2d5729;
     color: white;
-    padding: 10px 15px;
     border: none;
     cursor: pointer;
   }
