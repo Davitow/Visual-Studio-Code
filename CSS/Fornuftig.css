@@ -4,7 +4,7 @@
 
 body {
   margin: 0;
-  background-color: #81f676f6;
+  background-color: #dbf0def6;
   overflow-y: scroll;
 }
 
@@ -12,7 +12,7 @@ body {
 body {font-family: Verdana, sans-serif; margin:0}
 
 .header {
-  background-color: #81f6768e;
+  background-color: #dbf0def6;
   text-align: center;
   padding: 2%;
 }
@@ -63,7 +63,7 @@ body {font-family: Verdana, sans-serif; margin:0}
 }
 
 .grid-container > div {
-  background-color:#81f6768e;
+  background-color:#dbf0def6;
   text-align: center;
   padding:3% 0;
   font-size: 150%;
@@ -233,7 +233,7 @@ td {
 /*Footer, underside på nettsiden*/
 .footer {
   width: 100%;
-  background-color: #81f676f6;
+  background-color: #dbf0def6;
   padding: 10px;
 }
 
@@ -248,7 +248,7 @@ td {
   margin-top: 20px;
   text-align: center;
   padding: 20px;
-  background-color: #81f676f6;
+  background-color: #dbf0def6;
   border-radius: 5px;
 }
 
